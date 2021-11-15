@@ -1,0 +1,37 @@
+.div-card {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.alive .div-card:hover {
+  background-color: green;
+  transform: scale(1.1);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.die .div-card:hover {
+  background-color: red;
+  transform: scale(1.1);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.div-card img {
+  width: 200px;
+}
+
+@media screen and (max-width: 500px) {
+  .alive .div-card {
+    background-color: green;
+  }
+
+  .die .div-card {
+    background-color: red;
+  }
+}
